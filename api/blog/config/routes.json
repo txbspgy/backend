@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lunbos",
+      "handler": "lunbo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lunbos/count",
+      "handler": "lunbo.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lunbos/:id",
+      "handler": "lunbo.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lunbos",
+      "handler": "lunbo.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lunbos/:id",
+      "handler": "lunbo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lunbos/:id",
+      "handler": "lunbo.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

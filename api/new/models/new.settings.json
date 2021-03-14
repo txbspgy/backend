@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news",
+  "info": {
+    "name": "new",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "source": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "imgUrl": {
+      "type": "string"
+    }
+  }
+}

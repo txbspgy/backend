@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "seo",
+  "info": {
+    "name": "Global"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "seo": {
+      "type": "string"
+    },
+    "SiteName": {
+      "type": "string"
+    }
+  }
+}

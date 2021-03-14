@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movies",
+  "info": {
+    "name": "Movie",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "todos": {
+      "collection": "todos",
+      "via": "movies",
+      "dominant": true
+    },
+    "img": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    }
+  }
+}

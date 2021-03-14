@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "upjobs",
+  "info": {
+    "name": "Upjob",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "work": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "phone": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/uphouses",
+      "handler": "uphouse.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/uphouses/count",
+      "handler": "uphouse.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/uphouses/:id",
+      "handler": "uphouse.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/uphouses",
+      "handler": "uphouse.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/uphouses/:id",
+      "handler": "uphouse.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/uphouses/:id",
+      "handler": "uphouse.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

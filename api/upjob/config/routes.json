@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/upjobs",
+      "handler": "upjob.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/upjobs/count",
+      "handler": "upjob.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/upjobs/:id",
+      "handler": "upjob.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/upjobs",
+      "handler": "upjob.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/upjobs/:id",
+      "handler": "upjob.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/upjobs/:id",
+      "handler": "upjob.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

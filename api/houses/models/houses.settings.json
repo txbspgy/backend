@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "houses",
+  "info": {
+    "name": "House",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "categories": {
+      "collection": "categories",
+      "via": "houses"
+    },
+    "img": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    }
+  }
+}

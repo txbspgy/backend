@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lunbos",
+  "info": {
+    "name": "Lunbo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "text": {
+      "type": "text"
+    },
+    "img": {
+      "type": "string"
+    }
+  }
+}

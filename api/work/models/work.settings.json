@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "works",
+  "info": {
+    "name": "Work",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "jobs": {
+      "via": "works",
+      "collection": "job",
+      "dominant": true
+    }
+  }
+}
